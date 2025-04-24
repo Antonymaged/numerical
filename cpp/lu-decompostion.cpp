@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <iomanip>
-
 using namespace std;
 
 void inputMatrix(vector<vector<double>>& matrix, int n) {
@@ -80,12 +79,8 @@ int main() {
     vector<vector<double>> matrix(n, vector<double>(n + 1));
     
     inputMatrix(matrix, n);
-    
     cout << "Augmented Matrix:\n";
     printMatrix(matrix, n);
-    
     cout << "LU Decomposition:\n";
     luDecomposition(matrix, n);
-    
-    return 0;
 }

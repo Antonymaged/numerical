@@ -2,7 +2,6 @@
 #include <vector>
 #include <cmath>
 #include <iomanip>
-
 using namespace std;
 
 void inputMatrix(vector<vector<double>>& matrix, int n) {
@@ -111,12 +110,9 @@ int main() {
     vector<vector<double>> matrix(n, vector<double>(n + 1));
     
     inputMatrix(matrix, n);
-    
     cout << "Augmented Matrix:\n";
     printMatrix(matrix, n);
-    
     cout << "LU Decomposition with Partial Pivoting:\n";
     luDecompositionPartialPivot(matrix, n);
     
-    return 0;
 }
